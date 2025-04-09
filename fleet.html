@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш автопарк - Таксомоторный парк 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Таксопарк 2025</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="fleet.html">Автопарк</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Наш автопарк</h1>
+        <div class="cars-grid">
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Hyundai+Solaris" alt="Hyundai Solaris">
+                <h3>Hyundai Solaris</h3>
+                <p>Эконом класс</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Kia+Rio" alt="Kia Rio">
+                <h3>Kia Rio</h3>
+                <p>Эконом класс</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Skoda+Octavia" alt="Skoda Octavia">
+                <h3>Skoda Octavia</h3>
+                <p>Комфорт класс</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Toyota+Camry" alt="Toyota Camry">
+                <h3>Toyota Camry</h3>
+                <p>Бизнес класс</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Mercedes+E-Class" alt="Mercedes E-Class">
+                <h3>Mercedes E-Class</h3>
+                <p>Премиум класс</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200?text=Volkswagen+Caravelle" alt="Volkswagen Caravelle">
+                <h3>Volkswagen Caravelle</h3>
+                <p>Минивэн</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Таксомоторный парк Челябинск. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="text" placeholder="Адрес подачи" required>
+                <input type="text" placeholder="Куда едем" required>
+                <select>
+                    <option>Выберите тариф</option>
+                    <option>Эконом</option>
+                    <option>Комфорт</option>
+                    <option>Бизнес</option>
+                    <option>Минивэн</option>
+                </select>
+                <button type="submit">Заказать такси</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Спасибо за заказ!</h2>
+            <p>Ваш заказ успешно оформлен. Водитель свяжется с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

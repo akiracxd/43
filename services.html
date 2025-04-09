@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Услуги - Таксомоторный парк 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">Таксопарк 2025</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="fleet.html">Автопарк</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Наши услуги</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Стандартный заказ</h3>
+                <p>Поездка по городу с фиксированным тарифом</p>
+                <p class="price">от 150 ₽</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="service-card">
+                <h3>Трансфер</h3>
+                <p>Встреча в аэропорту или на вокзале</p>
+                <p class="price">от 1000 ₽</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="service-card">
+                <h3>Детское такси</h3>
+                <p>Перевозка детей с детским креслом</p>
+                <p class="price">от 200 ₽</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="service-card">
+                <h3>Грузовое такси</h3>
+                <p>Перевозка небольших грузов</p>
+                <p class="price">от 500 ₽</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="service-card">
+                <h3>Корпоративное обслуживание</h3>
+                <p>Такси для сотрудников вашей компании</p>
+                <p class="price">Индивидуальный тариф</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+            <div class="service-card">
+                <h3>Долгосрочная аренда</h3>
+                <p>Автомобиль с водителем на длительный срок</p>
+                <p class="price">от 2000 ₽/день</p>
+                <button class="order-btn">Заказать</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Таксомоторный парк Челябинск. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="text" placeholder="Адрес подачи" required>
+                <input type="text" placeholder="Куда едем" required>
+                <select>
+                    <option>Выберите услугу</option>
+                    <option>Стандартный заказ</option>
+                    <option>Трансфер</option>
+                    <option>Детское такси</option>
+                    <option>Грузовое такси</option>
+                    <option>Корпоративное обслуживание</option>
+                    <option>Долгосрочная аренда</option>
+                </select>
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Спасибо за заказ!</h2>
+            <p>Ваш заказ успешно оформлен. Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
