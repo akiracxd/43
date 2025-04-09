@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таксомоторный парк 2025 - Челябинск</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Таксопарк 2025</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="fleet.html">Автопарк</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Таксомоторный парк 2025</h1>
+            <p>Современные такси в Челябинске с комфортом и безопасностью</p>
+            <button class="cta-button" id="orderNowBtn">Заказать сейчас</button>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Быстро</h3>
+                <p>Прибытие за 5-10 минут</p>
+            </div>
+            <div class="feature">
+                <h3>Надежно</h3>
+                <p>Лицензированные водители</p>
+            </div>
+            <div class="feature">
+                <h3>Удобно</h3>
+                <p>Онлайн-оплата и трекинг</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Таксомоторный парк Челябинск. Все права защищены.</p>
+    </footer>
+
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="text" placeholder="Адрес подачи" required>
+                <input type="text" placeholder="Куда едем" required>
+                <select>
+                    <option>Выберите тариф</option>
+                    <option>Эконом</option>
+                    <option>Комфорт</option>
+                    <option>Бизнес</option>
+                    <option>Минивэн</option>
+                </select>
+                <button type="submit">Заказать такси</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Спасибо за заказ!</h2>
+            <p>Ваш заказ успешно оформлен. Водитель свяжется с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
